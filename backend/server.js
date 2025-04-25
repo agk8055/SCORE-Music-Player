@@ -64,7 +64,7 @@ app.use((err, req, res, next) => {
 const preventColdStart = async () => {
   try {
     console.log('Making request to prevent cold start...');
-    const response = await axios.get('https://jiosaavnapi-bok7.onrender.com/');
+    const response = await axios.get('https://score-music-player-backend.onrender.com/');
     console.log('Cold start prevention successful:', response.status);
   } catch (error) {
     console.error('Cold start prevention failed:', error.message);
