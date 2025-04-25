@@ -82,11 +82,12 @@ class _BaseLayoutState extends State<BaseLayout> {
                         onChanged: _handleSearchChanged,
                       ),
                     )
-                  : Text(
-                      widget.title,
-                      style: const TextStyle(
-                        color: Color(0xFFFFDB4D),
-                        fontWeight: FontWeight.bold,
+                  : Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12.0),
+                      child: Image.asset(
+                        'assets/images/logo.jpg',
+                        height: 45,
+                        fit: BoxFit.contain,
                       ),
                     ),
               actions: [
